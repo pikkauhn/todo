@@ -59,7 +59,7 @@ const Task: React.FC<TaskProps> = ({ task }) => {
                 <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
                     <h3 className="text-lg">Are you sure?</h3>
                     <div className="modal-action">
-                        <button onClick={() => handleSubmitDeleteTodo(task.id)}>Yes</button>
+                        <button className='btn' onClick={() => handleSubmitDeleteTodo(task.id)}>Yes</button>
                     </div>
                 </Modal>
             </td>
